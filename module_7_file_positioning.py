@@ -1,6 +1,6 @@
 
 def custom_write(file_name: str, strings: list) -> dict:
-    file = open(file_name, 'w')
+    file = open(file_name, 'w', encoding='utf-8')
     string_positions ={}
     for i in range(len(strings)):
         string_positions[(i, file.tell())] = strings[i]
